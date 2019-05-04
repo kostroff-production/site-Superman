@@ -1,0 +1,93 @@
+
+:root{
+    --height: 3em;
+    --bgr: rgb(64, 64, 64);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, white, grey);
+
+}
+
+.btn8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    color: #0FC0FC;
+    background: var(--bgr);
+    height: calc(1 * var(--height));
+    width: calc(2 * 0.866 * var(--height));
+    box-shadow: 0em 1em 5em;
+    transition: box-shadow ease 1s;
+    z-index: 9;
+    border-radius: 8px;
+    
+}
+
+.btn8
+.btn8:before{
+    content: '';
+    position: absolute;
+    transition: all ease-in-out 2s;
+    top: 0px; left: 0px;
+    height: calc(1 * var(--height));
+    width: calc(2 * 0.866 * var(--height));
+    background: var(--bgr);
+    opacity: 0;
+    z-index: -5;
+    border-radius: 8px;
+}
+
+.btn8:hover{
+    transition: box-shadow linear 0.8s;
+    box-shadow: none;
+    color: #0FC0FC;
+}
+.btn8:after{
+    transform: rotate(60deg) translateX(calc(-2 * var(--height)));
+}
+
+.btn8:before{
+    transform: rotate(-60deg) translateX(calc(2 * var(--height)));
+    transition-delay: 0.1s;
+}
+
+.btn8:hover:after,
+.btn8:hover:before{
+    content: '';
+    position: absolute;
+    top: 0px; left: 0px;
+    transition: all ease-in-out .8s;
+    height: calc(1 * var(--height));
+    width: calc(2 * 0.866 * var(--height));
+    background: var(--bgr);
+    opacity: 1;
+    z-index: -5;
+    border-radius: 8px;
+}
+
+.btn8:hover:after{
+    transform: rotate(60deg) translateX(0);
+    
+}
+
+.btn8:hover:before{
+    transform:  rotateZ(-60deg) translateX(0px);
+    transition-delay: 0.1s;
+}
+
+.btn8:active:before,
+.btn8:active:after{
+    transform: rotateZ(0deg);
+}
+
+.btn8:active:before{
+    transition-delay: .1s;
+}

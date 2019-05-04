@@ -1,0 +1,9 @@
+.btn-info {
+	margin-left: 585px;
+}
+
+@media (max-width: 1700px) {
+	.btn-info {
+		margin-left: 50px;
+	}
+}

@@ -1,0 +1,16 @@
+#aa {
+	color: #E4E455;
+
+}
+
+#aa:hover {
+	color: #2BA5F6;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #2BA5F6;
+  border-bottom-color: #2BA5F6;
+ }
+
