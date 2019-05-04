@@ -1,0 +1,13 @@
+{% extends 'history/base_history.html' %}
+
+{% block title %}
+  History
+{% endblock %}
+
+{% block content %}
+
+  {% for post in posts.object_list %}
+  	{% include 'history/includes/post_list.html' %}
+  {% endfor %}
+
+{% endblock %}

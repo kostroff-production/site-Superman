@@ -1,0 +1,14 @@
+{% extends 'history/base_history.html' %}
+
+
+{% block title %}
+	{{ post.title }} - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+
+	<h1 style="margin-top: 100px; color: #E4E4E4;">{{ post.title }}</h1>
+	<p style="margin-top: 70px; margin-left: 270px; margin-right: 270px; white-space: pre-line; color: #E4E4E4;">{{ post.body }}</p>
+
+{% endblock %}

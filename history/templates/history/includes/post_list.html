@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/block1.css' %}">
+  <div class="row">
+    <div class="col-sm-8 col-md-8">
+      <div class="thumbnail">
+        <img {% if posts.number == 1 %} src="{% static 'app/image/man2.jpg' %}" {% elif posts.number == 2 %} src="{% static 'app/image/Superman8.jpg' %}" {% elif posts.number == 3 %} src="{% static 'app/image/Job.jpg' %}" {% elif posts.number == 4 %} src="{% static 'app/image/DC-Superman.jpg' %}" {% elif posts.number == 5 %} src="{% static 'app/image/Power3.jpg' %}" {% endif %}>
+        <div class="caption" >
+          <h1>{{ post.title }}</h1>
+          <p style="text-decoration: underline;">{{ post.body|truncatewords:15 }}</p>
+          <p><a href="{{ post.get_absolute_url }}" class="btn btn-warning" role="button">Open</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
