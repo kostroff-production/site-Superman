@@ -1,0 +1,13 @@
+{% load static %}
+<link href="{% static 'css/FAQ.css' %}" rel="stylesheet" type="text/css">
+	<div class="faq">
+		<ul class="faq-questions">
+			<li>
+				<h4 class="faq-question" data-toggle="dropdown">{{ post.title }}</h4>
+				<p class="faq-answer dropdown-menu">{{ post.body }}</p>
+				{% if request.user.is_authenticated and request.user.is_staff %}
+					<p><a href="{{ post.get_absolute_url }}" class="btn btn-warning" role="button">Open</a></p>
+				{% endif %}
+			</li>
+		</ul>
+	</div>

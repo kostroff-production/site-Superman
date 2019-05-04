@@ -1,0 +1,18 @@
+{% extends 'FAQ/FAQ.html' %}
+
+
+{% block title %}
+	{{ post.title }} - {{ block.super }}
+{% endblock %}
+
+
+{% block content %}
+	<div class="faq">
+		<ul class="faq-questions">
+			<li>
+				<h4 class="faq-question" data-toggle="dropdown">{{ post.title }}</h4>
+				<p class="faq-answer dropdown-menu">{{ post.body }}</p>
+			</li>
+		</ul>
+	</div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="{% static 'css/FAQ.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/admin.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/btn.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/FAQ_btn.css' %}" rel="stylesheet" type="text/css">
+  <title>
+
+    {% block title %}
+      FAQ
+    {% endblock %}
+
+  </title>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+  </div>
+
+  <div class="masthead clearfix">
+    <div class="inner">
+
+      <nav>
+        <ul class="nav masthead-nav">
+          <li><a id="aa" href="{% url 'home_url' %}" style="
+          padding-right: 0;
+          padding-left: 10;
+          font-size: 16px;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;
+          ">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+ 
+  <div class="container">
+    <h1 class="nice-header"><a href="{% url 'FAQ_url' %}" style="color: #D8D8D8;"> FAQ </a><a href="https://www.instagram.com/kostroff_production/" class="sub" target="_blank">by kostroff_production</a></h1>
+
+    <a href="{% url 'FAQ_create_url' %}" class="btn btn-info" style="{% if detail %}display: none;{% endif %} {% if update %}display: none;{% endif %} {% if create %}display: none;{% endif %} {% if delete %}display: none;{% endif %}">Задать вопрос</a></li>
+
+    {% block content %}
+      Post
+    {% endblock %}
+
+    {% if request.user.is_authenticated and request.user.is_staff %}
+
+      <div class="admin-panel align-items-center">
+        <a href="/admin" class="btn btn-outline-info">Admin</a>
+
+        {% block admin-panel %}
+
+          <a href="{% url 'FAQ_create_url' %}" class="btn btn-light">Create</a></li>
+
+          <a href="{{ admin_object.get_update_url }}" class="btn btn-light" style="{% if detail %}display: block;{% endif %}">Update</a>
+          <a href="{{ admin_object.get_delete_url }}" class="btn btn-danger" style="{% if detail %}display: block;{% endif %}">Delete</a>
+
+        {% endblock %}
+      
+      </div>
+    {% endif %}
+  </div>
+
+

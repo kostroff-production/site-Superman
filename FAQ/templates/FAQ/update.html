@@ -1,0 +1,31 @@
+{% extends 'FAQ/FAQ.html' %}
+
+{% block title %}
+	Update 
+{% endblock %}
+
+{% block content %}
+
+	<form action="{{ post.get_update_url }}" method="post" style="margin-top: 100px;">
+		{% csrf_token %}
+
+		{% for field in form %}
+			<div class="form-group">
+				{% if field.errors %}
+					<div class="alert alert-danger">
+						{{ field.errors }}
+					</div>
+				{% endif %}
+
+				{{ field.label }}
+
+				{{ field }}
+			</div>
+
+		{% endfor %}
+
+		<button type="submit" class="btn btn-primary">Save</button>
+		
+	</form>
+
+{% endblock %}

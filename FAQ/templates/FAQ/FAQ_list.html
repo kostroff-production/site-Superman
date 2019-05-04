@@ -1,0 +1,13 @@
+{% extends 'FAQ/FAQ.html' %}
+
+{% block title %}
+  FAQ
+{% endblock %}
+
+{% block content %}
+
+  {% for post in posts %}
+  	{% include 'FAQ/includes/posts.html' %}
+  {% endfor %}
+
+{% endblock %}
