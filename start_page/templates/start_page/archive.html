@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Video Archive</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="#" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/btn.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/archive.css' %}" rel="stylesheet" type="text/css">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="masthead clearfix">
+      <div class="inner">
+
+        <nav>
+          <ul class="nav masthead-nav">
+            <li><a id="aa" href="{% url 'home_url' %}">Home</a></li>
+            <li><a id="aa" href="{% url 'history_list_url' %}">Main</a></li>
+            <li><a id="aa" href="{% url 'archive_url' %}">Archive</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+   
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+    
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><span class="text-muted">Тайны Cмолвиля</span></h2>
+          <p class="lead">Сериал повествует о юности Кларка Кента и его становлении супергероем. Были раскрыты некоторые подробности вселенной фильмов о Супермене: влияние криптонита на людей, становление личности Кларка Кента и других героев комиксов.
+
+          В начале сериала, в отличие от традиции фильмов о Супермене, Лекс Лютор является другом Кларка Кента, а не врагом. Перерождение Лексса в суперзлодея, стремящегося к мировому господству, начинается гораздо позже, лишь с 4 сезона.</p>
+          <a href="https://www.kinopoisk.ru/film/86193/watch/?from=qa_serp&source=serp&vars=block%3Dbig-answer&reqid=1555597707954156-1709013883261894618200034-man1-3692" class="btn btn-warning" role="button" style="left: 80px; padding-right: 30px; padding-left: 30px; font-size: medium;" target="_blank">look</a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'app/image/Smolvil.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading"><span class="text-muted">Человек из стали</span></h2>
+          <p class="lead">Фантастический боевик режиссёра Зака Снайдера и продюсера Кристофера Нолана по сценарию Дэвида Гойера, основанный на комиксах о Супермене издательства DC Comics. Является перезапуском серии фильмов о Супермене и описывает историю происхождения персонажа. Он положил начало киновселенной, разработанной DC Comics. Роль Супермена исполняет Генри Кавилл, Лоис Лейн — Эми Адамс, а Генерала Зода — Майкл Шэннон. Выход фильма в США состоялся 14 июня 2013 года, в России — 20 июня 2013 года.</p>
+          <a href="https://www.kinopoisk.ru/film/252667/watch/?from_block=button_online" class="btn btn-warning" role="button" style="right: 90px; padding-right: 30px; padding-left: 30px; font-size: medium;" target="_blank">look</a>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="{% static 'app/image/Man-of-Steel.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><span class="text-muted">Бэтмен против Супермена: На заре справедливости</span></h2>
+          <p class="lead">Фильм основывается на двух комиксах — «Бэтмен. Возвращение Тёмного Рыцаря» и «Смерть Супермена». Это второй фильм Расширенной вселенной DC после «Человека из стали». Роль Бэтмена исполнил актёр Бен Аффлек, Супермена — Генри Кавилл, Лоис Лейн — Эми Адамс, Лекса Лютора — Джесси Айзенберг, а Чудо-женщину сыграла актриса Галь Гадот.Премьера в США состоялась 12 марта 2016 года, в России — 24 марта.</p>
+          <a href="https://www.kinopoisk.ru/film/770631/watch/?from_block=button_online" class="btn btn-warning" role="button" style="left: 80px; padding-right: 30px; padding-left: 30px; font-size: medium;" target="_blank">look</a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="{% static 'app/image/Batman.jpg' %}" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#"></a></p>
+        <p>&copy; 2019 Company, Inc. kostroff_production &middot;</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
