@@ -444,23 +444,5 @@
       "content_type": 8,
       "codename": "view_post"
    }
-},
-{
-   "model": "auth.user",
-   "pk": 1,
-   "fields": {
-      "password": "pbkdf2_sha256$120000$fxe3dHXkynOt$a7POs/qcvwXjXkRI2uVsPSwSrQoEXm4C0hkDm9Dg9dA=",
-      "last_login": "2019-05-08T08:52:22.160Z",
-      "is_superuser": true,
-      "username": "jony",
-      "first_name": "",
-      "last_name": "",
-      "email": "1@1.com",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2019-04-01T10:40:51.696Z",
-      "groups": [],
-      "user_permissions": []
-   }
 }
 ]
