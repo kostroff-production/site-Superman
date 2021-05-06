@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = '&z=4_#t9b(m2)hx9o(3%+xhl(!20)^z*v@@#uw*qpx_9x8cdyu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'Superman.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': ''
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jony_db',
+        'USER': 'jony',
+        'PASSWORD': 'jony',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
