@@ -24,5 +24,6 @@ Superman.<br>
 ### Раздел Историй
 В разделе собраны известные статьи и истории о герое, выполненные в виде слайдов, которые можно открыть и почитать.<br>
 ![history](screenshots/history.jpg)
-![alt text](screenshots/history_mobile.png)
-![alt text](screenshots/history_mobile_detail.jpg)
+![history_mobile](screenshots/history_mobile.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+![history_mobile_detail](screenshots/history_mobile_detail.jpg)
