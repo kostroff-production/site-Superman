@@ -20,3 +20,9 @@
 Стартовая страница выполнена в минималистичном стиле.<br>
 Основная кнопка на странице - это кнопка “Promo”, при нажатии на которую запускается ролик о 
 Superman.<br>
+![start_page](screenshots/start_page.jpg)
+### Раздел Историй
+В разделе собраны известные статьи и истории о герое, выполненные в виде слайдов, которые можно открыть и почитать.<br>
+![history](screenshots/history.jpg)
+![alt text](screenshots/history_mobile.png)
+![alt text](screenshots/history_mobile_detail.jpg)
