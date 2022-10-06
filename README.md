@@ -31,7 +31,6 @@ Superman.<br>
 <br>
 ![history_mobile](screenshots/history_mobile.png)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![history_mobile_detail](screenshots/history_mobile_detail.jpg)
 ### Раздел Фильмографии.
 В раздел добавлены несколько сериалов и фильмов о Superman с их кратким описание и кнопкой просмотра.<br>
@@ -46,14 +45,12 @@ Superman.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![movies_mobile](screenshots/movies_mobile.jpg)
 ### Раздел Ответов на вопросы.
 В разделе FAQ пользователи через специализированную форму могут задавать свои вопросы о сайте и вносить предложения.<br>
 Администратор сайта в последующем отвечает на вопросы пользователей, просмотреть ответ можно нажав на вопрос.
 <br>
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
