@@ -22,7 +22,9 @@
 Superman.<br>
 ![start_page](screenshots/start_page.jpg)
 ### Раздел Историй
-В разделе собраны известные статьи и истории о герое, выполненные в виде слайдов, которые можно открыть и почитать.<br>
+В разделе собраны известные статьи и истории о герое, выполненные в виде слайдов, которые можно открыть и почитать.
+<br>
+<br>
 ![history](screenshots/history.jpg)
 <br>
 <br>
@@ -30,3 +32,12 @@ Superman.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![history_mobile_detail](screenshots/history_mobile_detail.jpg)
+### Раздел Фильмографии.
+В раздел добавлены несколько сериалов и фильмов о Superman с их кратким описание и кнопкой просмотра.<br>
+При нажатии на кнопку просмотра пользователь будет перенаправлен на сайт Кинопоиска.
+<br>
+<br>
+![movies](screenshots/movies.jpg)
+<br>
+<br>
+![movies_mobile](screenshots/movies_mobile.jpg)
