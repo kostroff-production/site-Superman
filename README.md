@@ -47,3 +47,9 @@ Superman.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![movies_mobile](screenshots/movies_mobile.jpg)
+### Раздел Ответов на вопросы.
+В разделе FAQ пользователи через специализированную форму могут задавать свои вопросы о сайте и вносить предложения.<br>
+Администратор сайта в последующем отвечает на вопросы пользователей, просмотреть ответ можно нажав на вопрос.
+<br>
+<br>
+![faq](screenshots/faq.jpg)
